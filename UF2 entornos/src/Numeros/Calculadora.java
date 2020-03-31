@@ -8,17 +8,16 @@ public class Calculadora {
 		// TODO Auto-generated method stub
 		
 		
-		
+		//Variables calculadora 
 		int a=0;
 		int b=0;
 		int res=0;
-		
 		String sel=null;
 		
 		
 		
-		Scanner tec=new Scanner(System.in);
-		System.out.println("seleccione la opción");
+		Scanner tec=new Scanner(System.in); //Objeto
+		System.out.println("seleccione la opción");//imprimir en pantalla
 		System.out.println("+:Suma\n");
 		System.out.println("-: Resta\n");
 		System.out.println("*: Multiplicación\n");
@@ -26,9 +25,8 @@ public class Calculadora {
 		
 		
 		sel=tec.next();
-		
+		//el switch se encarga de estructurar una selección multiple
 		switch(sel){
-		
 		case "+":
 			System.out.println("ha seleccionado suma\n");
 			System.out.println("ingrese el primer numero");
@@ -37,7 +35,7 @@ public class Calculadora {
 			b=tec.nextInt();
 			res=a+b;
 			System.out.println(a+"+"+b+"="+res);
-			break;
+			break;//finaliza el case
 			
 			
 		case "-":
@@ -71,7 +69,7 @@ public class Calculadora {
 			res=a/b;
 			System.out.println(a+"/"+b+"="+res);
 			break;
-		default:
+		default://se usa cuando no elegimos ningun modificador 
 			System.out.println("Esa opción no existe");
 		}
 	}
